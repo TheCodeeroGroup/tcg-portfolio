@@ -3,12 +3,23 @@
         <!-- Your hero content here -->
         <div class="container h-100 hero">
             <div class="typewriter">
-                <h1 id="dynamic-text">CRAFTING EXPERIENCES<br>THAT <span id="text"></span><span class="cursor blinking-cursor" id="cursor"></span></h1>
+                <h1 id="dynamic-text" class="display-1">CRAFTING EXPERIENCES<br>THAT <span id="text"></span><span class="cursor blinking-cursor" id="cursor"></span></h1>
             </div>
         </div>
         <div id="blue-dot"></div>
     </section>
-    <section class="hundred"></section>
+    <section class="hundred">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="hollow display-1 display-lg-1"> DIGITAL PARTNER</h1>
+                    <h1 class="text-center">
+                        Brands. Strategy. Events. Development
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 <script>
 export default {
@@ -109,6 +120,22 @@ export default {
 }
 </script>
 <style>
+.hollow {
+    margin-bottom: -45px;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 700;
+    font-family: Roboto;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 1px #1A202C;
+    color: white;
+}
+
+.hollow.display-lg-1{
+  font-size:6rem;
+}
+
 #blue-dot {
     width: 30px;
     height: 30px;
@@ -161,13 +188,12 @@ export default {
 
 .typewriter h1 {
     color: white;
-    font-size: 6rem;
-    white-space: nowrap;
     overflow: hidden;
     padding: 0;
     margin: 0;
     font-weight: 700;
 }
+
 
 .cursor {
     display: inline;
