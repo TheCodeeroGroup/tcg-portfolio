@@ -8,7 +8,7 @@
         </div>
         <div id="blue-dot"></div>
     </section>
-    <section class="hundred">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -16,7 +16,21 @@
                     <h1 class="text-center">
                         Brands. Strategy. Events. Development
                     </h1>
+                    </div>
+            <div class="row">
+                <div class="col-6 red">
+                    <!-- Your red column content goes here -->
                 </div>
+                <div class="col-6 offset-6 expand blue">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+               
             </div>
         </div>
     </section>
@@ -59,7 +73,6 @@ export default {
                         letterIndex++;
                         textElement.textContent = words[wordIndex].substring(0, letterIndex);
                     }
-
                     if (!isDeleting && letterIndex === words[wordIndex].length) {
                         isDeleting = true;
                         cursorElement.classList.add('blinking-cursor');
@@ -120,6 +133,23 @@ export default {
 }
 </script>
 <style>
+
+  .red{
+    background-color: lightgoldenrodyellow;
+    height: 400px !important;
+  }
+
+  .blue{
+    background-color: lightblue;
+    height: 400px !important;
+  }
+
+  .expand {    
+    width: calc(100vw - 50%);
+    position: absolute;
+    right: 0;
+
+}
 .hollow {
     margin-bottom: -45px;
     text-align: center;
@@ -132,11 +162,12 @@ export default {
     color: white;
 }
 
-.hollow.display-lg-1{
-  font-size:6rem;
+.hollow.display-lg-1 {
+    font-size: 6rem;
 }
 
 #blue-dot {
+    z-index: 5000;
     width: 30px;
     height: 30px;
     background-color: var(--blue);

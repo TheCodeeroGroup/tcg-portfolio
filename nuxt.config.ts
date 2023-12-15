@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     css: ['~/assets/css/global.css', 'bootstrap/dist/css/bootstrap.min.css'],
-    plugins: [
-        '~/plugins/bootstrap.client.js'
-    ],
     head: {
         title: 'Your Page Title',
         meta: [
@@ -12,6 +9,7 @@ export default defineNuxtConfig({
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             // Other meta tags can be added here
         ],
+
         // Other head configurations like link tags, script tags, etc.
     },
 

@@ -9,6 +9,13 @@
     <Footer />
 </template>
 <script>
+import('bootstrap/dist/js/bootstrap.bundle.min.js')
+    .then(() => {
+        console.log('Bootstrap JS loaded');
+    })
+    .catch((error) => {
+        console.error('Error loading Bootstrap:', error);
+    });
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 
