@@ -12,5 +12,7 @@ export default defineNuxtConfig({
 
         // Other head configurations like link tags, script tags, etc.
     },
+    plugins: [
+    ],
 
 })

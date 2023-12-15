@@ -10,33 +10,37 @@
     </section>
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row mt-5 mb-5">
                 <div class="col">
                     <h1 class="hollow display-1 display-lg-1"> DIGITAL PARTNER</h1>
                     <h1 class="text-center">
                         Brands. Strategy. Events. Development
                     </h1>
-                    </div>
-            <div class="row">
-                <div class="col-6 red">
-                    <!-- Your red column content goes here -->
                 </div>
-                <div class="col-6 offset-6 expand blue">
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-5 red">
+                        <!-- Your red column content goes here -->
+                    </div>
+                    <div class="col-12 col-lg-7 offset-lg-5 expand pe-0">
+                        <Carousel />
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="row">
-               
             </div>
         </div>
     </section>
 </template>
 <script>
+import Carousel from '~/components/Slider.vue';
 export default {
+    components: {
+        Carousel
+    },
     data() {
         return {
             followCursor: false
@@ -133,23 +137,22 @@ export default {
 }
 </script>
 <style>
-
-  .red{
+.red {
     background-color: lightgoldenrodyellow;
     height: 400px !important;
-  }
+}
 
-  .blue{
+.blue {
     background-color: lightblue;
     height: 400px !important;
-  }
+}
 
-  .expand {    
-    width: calc(100vw - 50%);
+.expand {
     position: absolute;
     right: 0;
 
 }
+
 .hollow {
     margin-bottom: -45px;
     text-align: center;
