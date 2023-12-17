@@ -31,15 +31,25 @@
     <section>
         <div class="container">
             <div class="row">
+                <div class="col"><h1>What We Do</h1></div>
+                <div class="col"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur commodo vehicula. Suspendisse id ullamcorper risus. In accumsan pulvinar justo vitae sagittis. Maecenas ornare lobortis molestie. </p> </div>
+                <div class="col d-flex justify-content-end"><div><button type="button" class="btn btn-lg btn-primary rounded-0">Let's Work Together</button></div></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <Skills />
+                </div>
             </div>
         </div>
     </section>
 </template>
 <script>
 import Carousel from '~/components/Slider.vue';
+import Skills from '~/components/Skills.vue';
 export default {
     components: {
-        Carousel
+        Carousel,
+        Skills
     },
     data() {
         return {
